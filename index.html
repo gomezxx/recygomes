@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="kuUmTNrpcpuTYb2JPZ3FbZuAd5XkVh1yyypbHKJHPck" />
-<title>Recygomes - Compra e Venda de Sucatas e Carros Usados</title>
+  <title>Recygomes - Compra e Venda de Sucatas e Carros Usados</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -108,6 +108,7 @@
     <div class="container mx-auto px-6">
       <h2 class="section-title text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
       <div class="grid md:grid-cols-2 gap-12">
+        <!-- Sucatas -->
         <div class="bg-white p-8 rounded-lg shadow-lg fade-in">
           <img src="paifrente.jpeg" 
                alt="Sucatas" class="w-full h-48 object-cover rounded-t-lg mb-6" />
@@ -120,6 +121,7 @@
             <li>Preços competitivos</li>
           </ul>
         </div>
+        <!-- Carros Usados -->
         <div class="bg-white p-8 rounded-lg shadow-lg fade-in">
           <img src="paicamiao.jpeg" 
                alt="Carros Usados" class="w-full h-48 object-cover rounded-t-lg mb-6" />
@@ -129,6 +131,16 @@
             <li>Grande variedade de modelos</li>
             <li>Vistoria completa</li>
             <li>Negociação justa</li>
+          </ul>
+        </div>
+        <!-- Novo Serviço: Catalizadores -->
+        <div class="bg-white p-8 rounded-lg shadow-lg fade-in">
+          <h3 class="text-2xl font-bold mb-4">Compra de Catalizadores</h3>
+          <p class="mb-6">Compramos catalizadores usados de forma segura e transparente, oferecendo preços justos e atendimento personalizado.</p>
+          <ul class="list-disc list-inside">
+            <li>Compra de catalizadores variados</li>
+            <li>Pagamento rápido e seguro</li>
+            <li>Atendimento profissional</li>
           </ul>
         </div>
       </div>
@@ -148,88 +160,4 @@
         <form id="contact-form" class="space-y-6">
           <div>
             <label for="name" class="block text-sm font-medium">Nome</label>
-            <input type="text" id="name" name="name" required 
-                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
-          </div>
-          <div>
-            <label for="phone" class="block text-sm font-medium">Número de telemóvel</label>
-            <input type="tel" id="phone" name="phone" required 
-                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
-          </div>
-          <div>
-            <label for="message" class="block text-sm font-medium">Mensagem</label>
-            <textarea id="message" name="message" rows="4" required 
-                      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"></textarea>
-          </div>
-          <div class="form-buttons">
-            <button type="button" id="whatsapp-btn" class="btn w-full">Enviar pelo WhatsApp</button>
-            <button type="button" id="messenger-btn" class="btn w-full">Enviar pelo Messenger</button>
-            <button type="button" id="sms-btn" class="btn w-full">Enviar por SMS</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-12">
-    <div class="container mx-auto px-6 text-center text-white">
-      <p>&copy; 2025 Recygomes - Marco Gomes | Todos os direitos reservados.</p>
-      <div class="mt-6 space-x-6">
-        <a href="#" class="hover:text-green-500">Política de Privacidade</a>
-        <a href="#" class="hover:text-green-500">Termos de Serviço</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => { 
-      mobileMenu.classList.toggle('hidden'); 
-      menuBtn.classList.toggle('active');
-    });
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    const whatsappBtn = document.getElementById('whatsapp-btn');
-    const messengerBtn = document.getElementById('messenger-btn');
-    const smsBtn = document.getElementById('sms-btn');
-
-    function getFormMessage() {
-      const name = encodeURIComponent(document.getElementById('name').value);
-      const phone = encodeURIComponent(document.getElementById('phone').value);
-      const message = encodeURIComponent(document.getElementById('message').value);
-      return `Olá, meu nome é ${name}. Número de telemóvel: ${phone}. Mensagem: ${message}`;
-    }
-
-    whatsappBtn.addEventListener('click', () => {
-      const msg = getFormMessage();
-      window.open(`https://wa.me/351930523183?text=${msg}`, '_blank');
-    });
-
-    messengerBtn.addEventListener('click', () => {
-      const msg = getFormMessage();
-      window.open(`https://www.facebook.com/share/1aU3jQyydG/?text=${msg}`, '_blank');
-    });
-
-    smsBtn.addEventListener('click', () => {
-      const msg = getFormMessage();
-      window.open(`sms:+351930523183?body=${msg}`, '_blank');
-    });
-
-    const observerOptions = { threshold: 0.1 };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('fade-in'); });
-    }, observerOptions);
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
-
-</body>
-</html>
+            <input type="text" id="name" name="name
