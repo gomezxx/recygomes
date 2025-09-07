@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-pt" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carros Usados - Recygomes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --green-color:#16a34a; --black-color:#111; --white-color:#fff; }
+    body{background-color:var(--white-color);color:var(--black-color);}
+    a{color:var(--black-color);transition:0.3s;}
+    a:hover{color:var(--green-color);}
+    header{background-color:var(--white-color);position:sticky;top:0;z-index:10;}
+    .header-top-bar{height:6px;background-color:var(--green-color);width:100%;}
+    footer{background-color:var(--black-color);color:var(--white-color);}
+    nav a {margin-right:1rem;text-decoration:none;font-weight:600;}
+    nav .submenu{display:inline-block;position:relative;}
+    nav .submenu-content{display:none;position:absolute;background-color:white;box-shadow:0 0 10px rgba(0,0,0,0.2);border-radius:0.25rem;}
+    nav .submenu:hover .submenu-content{display:block;}
+    nav .submenu-content a{display:block;padding:0.5rem 1rem;color:var(--black-color);}
+    nav .submenu-content a:hover{background-color:#d1fae5;}
+    .service-img {width:100%;border-radius:0.5rem;box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+  </style>
+</head>
+<body class="font-sans">
+
+<header class="shadow-md">
+  <div class="header-top-bar"></div>
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-green-600">Recygomes - Marco Gomes</div>
+    <nav class="hidden md:flex items-center space-x-6">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <div class="submenu">
+        <a href="#">Nossos Serviços</a>
+        <div class="submenu-content">
+          <a href="sucata.html">Sucata</a>
+          <a href="camiao.html">Carros Usados</a>
+          <a href="catalizadores.html">Catalizadores</a>
+        </div>
+      </div>
+      <a href="#contact">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container mx-auto px-6 py-20">
+  <h1 class="text-4xl font-bold mb-6 text-green-600">Compra e Venda de Carros Usados</h1>
+  <img src="camiao.jpeg" alt="Carros Usados" class="service-img mb-6">
+  <p class="text-lg mb-4">Na Recygomes, especializamos na compra e venda de carros usados de alta qualidade. Todos os veículos passam por vistoria completa e estão prontos para uso, garantindo segurança e confiabilidade.</p>
+  <p class="text-lg mb-4">Oferecemos atendimento personalizado para compradores e vendedores, com negociações justas e transparentes, visando a satisfação total dos nossos clientes.</p>
+  <p class="text-lg mb-4">Nosso compromisso é facilitar a troca responsável de veículos, promovendo práticas éticas e sustentáveis no mercado automóvel.</p>
+</section>
+
+<footer class="py-12">
+  <div class="container mx-auto px-6 text-center text-white">
+    <p>&copy; 2025 Recygomes - Marco Gomes | Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>
