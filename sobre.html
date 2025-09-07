@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-pt" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - Recygomes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --green-color: #16a34a;
+      --black-color: #111111;
+      --white-color: #ffffff;
+    }
+    body { background-color: var(--white-color); color: var(--black-color); }
+    a { color: var(--black-color); transition: color 0.3s; }
+    a:hover { color: var(--green-color); }
+    .highlight { background-color: var(--green-color); color: white; padding: 2rem; border-radius: 0.5rem; margin-bottom: 2rem; font-weight: 600; }
+    header { background-color: var(--white-color); position: sticky; top: 0; z-index: 10; }
+    .header-top-bar { height: 6px; background-color: var(--green-color); width: 100%; }
+    footer { background-color: var(--black-color); color: var(--white-color); }
+    nav a { margin-right: 1rem; text-decoration: none; font-weight: 600; }
+    nav .submenu { display: inline-block; position: relative; }
+    nav .submenu-content { display: none; position: absolute; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 0.25rem; }
+    nav .submenu:hover .submenu-content { display: block; }
+    nav .submenu-content a { display: block; padding: 0.5rem 1rem; color: var(--black-color); }
+    nav .submenu-content a:hover { background-color: #d1fae5; }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- Header -->
+  <header class="shadow-md">
+    <div class="header-top-bar"></div>
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-green-600">Recygomes - Marco Gomes</div>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <div class="submenu">
+          <a href="#">Nossos Serviços</a>
+          <div class="submenu-content">
+            <a href="sucata.html">Sucata</a>
+            <a href="camiao.html">Carros Usados</a>
+            <a href="catalizadores.html">Catalizadores</a>
+          </div>
+        </div>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Highlight -->
+  <section class="container mx-auto px-6 py-20">
+    <div class="highlight">
+      <p>A Recygomes, fundada por Marco Gomes, é uma empresa especializada na compra e venda de sucatas e veículos usados, com foco em sustentabilidade, transparência e compromisso com os clientes. Desde o início, o objetivo tem sido oferecer soluções responsáveis para empresas e particulares.</p>
+    </div>
+
+    <!-- Texto completo -->
+    <div class="space-y-6 text-lg">
+      <p>Com uma equipa altamente qualificada, a Recygomes garante avaliação justa, negociação transparente e pagamento imediato, otimizando desta forma a gestão de sucatas e veículos, ajudando os clientes a tomar decisões conscientes e eficientes.</p>
+      <p>Ao longo dos anos, a Recygomes expandiu os seus serviços, incluindo agora a compra e venda de carros e também de catalizadores, reforçando a sua posição como referência no setor. Cada transação é tratada com cuidado e atenção, assegurando confiança e qualidade em todos os processos.</p>
+      <p>O compromisso da Recygomes com o meio ambiente é evidente em todas as operações: a empresa promove a reciclagem correta de metais, carros e componentes automotivos, reduzindo o impacto ambiental e contribuindo para um futuro sustentável.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12">
+    <div class="container mx-auto px-6 text-center text-white">
+      <p>&copy; 2025 Recygomes - Marco Gomes | Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
